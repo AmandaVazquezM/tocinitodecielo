@@ -1,0 +1,257 @@
+/*ETIQUETAS COMUNES A TODAS LAS PÁGINAS*/
+/*Estas etíquetas corresponden a los estilos de títulos, parrafos y al cuerpo entero de las 4 webs*/
+* {
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-color: beige;
+    
+}
+p{ color: rgb(109, 47, 104) ; 
+    padding: 15px; 
+    text-align: center;
+    font-size: 130%;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1,h4,h5{ color:pink; 
+    padding: 15px; 
+    text-align: center; 
+    font-size: 200%; }
+h2{
+    color:rgb(255, 255, 255); 
+    padding: 15px; 
+    text-align: center; 
+    background-color: rgb(250, 175, 148);
+    border-radius: 20px;
+    }
+
+/*Estas etiquetas se aplican al menu de nuestras cuatro páginas*/
+nav{  padding:1%; 
+    background: lightpink;
+    font-size: 130%; }
+nav a{ color: black;
+    text-decoration: none;
+    width: 100%;
+    padding: 15px;
+    text-align: center; } 
+nav a:hover{ background: lightsalmon;
+    color: red; }
+    ul{list-style:none;}
+nav li::before{
+    font-family:"Font Awesome 6 Free";
+    content:"\f7ec";
+    margin-right:8px;
+    font-weight: 900;
+    }
+
+
+/*Esta etiqueta hace referencia al pie de pagina donde aparecen los iconos de redes*/
+footer{
+    text-align: center;
+    color: white;
+    background-color: lightpink;
+    }
+
+/*Etiqueta para los enlaces de la web*/
+a{
+    text-decoration: none;
+    color: pink;
+}
+
+/*Etiqueta para asignar un icono a los elementos del menú (lista)*/
+ul{
+    display: flex; 
+    flex-direction: row; 
+    justify-content:space-evenly;
+    list-style:none;
+}
+
+/*Etiqueta para elemento diferente, frases de la página principal*/
+span{
+    color: blueviolet;
+}
+
+/*Etiqueta para el formulario*/
+form{
+
+    text-align: center;
+}
+/************************************************************************************************************************/
+/*ESTILOS PÁGINA INICIO*/
+.cajapadre{
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    margin:2vh auto;
+}
+/*caja para cuadrar el contenedor con las imagenes de muestra de los dulces y estilo de la imagen*/
+.cajaimagenes{
+display: flex;
+flex-direction: row;
+flex-wrap:wrap;
+justify-content: space-between;
+}
+.dulces{
+   width: 19%;
+   border-radius: 10px;
+}
+/*Estilo de la parte principal de la web*/
+main{
+    background-color: beige;
+    align-items: center;
+    width: 220%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+/*Etiquetas para el anuncio de la derecha*/
+aside{
+background-image: linear-gradient(pink, rgb(160, 105, 139));
+padding: 20px;
+}
+.anuncio{
+    width: 90%;
+    height: 40%;
+    padding:20px ;
+}
+
+/*Imagen de la cabecera de la web*/
+.encabezado{
+width: 100%;
+}
+
+/* estilo contenedir de "claves del exito" y caja hija de esta*/
+.cajaexito{
+display:flex;
+flex-direction: row;
+background-image: url(./imagenes/pantumblr.png);
+justify-content: space-between;
+}
+.cajita{
+background-image:-webkit-radial-gradient(grey, rgba(255, 255, 255, 0.548));
+border-radius: 10%;
+width: 30%;
+color: aliceblue;
+margin: 2%;
+text-align: center;  
+}
+/************************************************************************************************************************/
+/*ESTILOS PÁGINA PRECIOS*/
+/*Estilos para los elementos de la tabla*/
+.cajapadreprecio{
+    width: 80vw;
+    margin:2vh auto;
+}
+table, th, td {
+    border: 1px solid pink;  
+    border-collapse: collapse;
+    padding: 5%;
+    font-size: 150%;}
+table { 
+    width:80%;
+    border: 5px solid pink;
+    margin: 0 auto;
+    margin-top: 2%;}
+th { 
+    text-align: center;
+    color:white;
+    background-color:pink;}
+td {
+text-align:left;
+color:black;
+width: 30%;}
+
+/*estilos primer y último hijo de la tabla, es decir, diferentes columnas*/
+td:nth-child(even){
+background-color:lightsalmon;;}
+td:nth-child(odd){
+background-color: lightcoral;}
+
+/*Estilo especial para IVA*/
+#IVA{
+    text-align: center;
+    color:rebeccapurple;}
+
+/************************************************************************************************************************/
+/*ESTILO PARA PÁGINA WEB TIENDAS "CONTACTO"*/
+/*imagenes de google y de las tiendas*/
+.foto{
+    width: 550px;
+    height: 350px;
+    padding-left: 5%;
+
+ }
+ .cajapadretienda{
+
+    margin:2vh auto;
+ }
+
+/************************************************************************************************************************/
+/*ESTILO PÁGINA CURSOS*/
+/*contenedor para los botones de los cursos*/
+.contenedor1{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+/*botones del formulario para elegir curso, normal y al pasar por encima(hover)*/
+.botoncito{
+    padding:3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    border: 3px double pink;
+    margin: 10px;
+    padding:5px;
+    background-color: lightsalmon;
+    color: white;
+
+ }
+ .botoncito:hover{
+    background-color: lightskyblue;
+    cursor: pointer;
+ }
+ 
+ /* estilo de las etiquetas de nombre de los inputs*/
+ label{
+     color: white;
+     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-size: 200%;
+ }
+
+ /*Etiqueta para el fondo del formulario*/
+
+ .cajaimagen{
+    opacity: .8;
+    background-size: cover;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./imagenes/Anadama_bread_1-1600x1067.jpg);
+
+ }
+ .cajafondopan{
+    width: 80vw;
+    margin:0 auto;
+
+ }
+
+ /*boton de formulario (submit, reset)*/
+ .envio{
+    color:white;
+    font-size:25px;
+    background-image: linear-gradient(rgba(254, 102, 125, 0.9), rgba(255, 163, 117, 0.9));
+    padding:5px;
+    margin:15px;
+    height:60px;
+    border-radius: 15%;
+    padding-left: 10px;
+    padding-right: 10px;
+ }
+ /*Elemento no seleccionable*/
+.des:disabled{
+    background-color: brown;
+}
+
+

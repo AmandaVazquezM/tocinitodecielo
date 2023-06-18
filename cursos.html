@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tocinito de cielo</title>
+        <link href="./estiloscomunes.css" rel="stylesheet">
+        <link href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </head>
+    <body>
+        <h1>Tocinito de cielo</h1>
+        <h4>Confiteria y pasteleria tradicional</h4>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="./tiendas.html">Contacto</a></li>
+                <li><a href="./precios.html">Precios</a></li>
+                <li><a href="cursos.html">Cursos de respostería</a></li>
+            </ul>
+        </nav>
+        <div class="cajaimagen">
+            <div class="cajafondopan">
+                <h2>CURSOS DE REPOSTERÍA</h2>
+            
+            
+                    <form>
+                        <h1>¿Que curso deseas hacer?</h1>
+            
+                        <div id="contenedor1">
+                            <button class="botoncito" type="button" value="pan" onclick="Swal.fire('Has elegido curso elaboración de pan')">Curso elaboración de pan</button>  
+                            <button class="botoncito" type="button" value="pasteles" onclick="Swal.fire('Has elegido curso de decoración de pasteles')">Curso de decoración de pasteles</button>
+                            <button class="botoncito" type="button" value="reposteria" onclick="Swal.fire('Has elegido curso de repostería tradicional')">Curso de repostería tradicional</button>
+                            <button class="botoncito" type="button" value="iniciacion" onclick="Swal.fire('Has elegido curso de iniciación')">Curso de iniciación</button>
+                        </div>
+            
+                        <hr>
+                        <h1>Cuentanos un poco de ti...</h1>
+            
+                        <label for="fname">Nombre:</label>
+                        <input id="fname" name="name" type="text"><br><br>
+            
+                        <label for="direccion">Email: </label>
+                        <input id="direccion" name="direccion" type="text"><br><br>
+            
+                        <label for="cuentanos">¿Qué estas haciendo?</label>
+                        <p style="font-weight: 800;color:pink">Las madres, desempleados y estudiantes recibirán un descuento en el precio</p>
+                        <br>
+                        <select id="cuentanos" name="cuentanos">
+                            <option value="apa">Estudiante</option>
+                            <option value="frio">Ama/o de casa</option>
+                            <option value="extro">Trabajador</option>
+                            <option value="intro">Desempleado</option>
+                        </select><br><br>
+            
+                        <label for="cuentanos2">¿Qué eres?</label>
+                        <br><br>
+                        <select id="cuentanos2" name="cuentanos2">
+                            <option value="hom">Hombre</option>
+                            <option value="muj">Mujer</option>
+                            <option value="nobinario">No-binario</option>
+                            <option value="otros">Otros...</option>
+                        </select><br><br><br><br>
+                            
+                        <textarea name="comentarios" rows="10" cols="40" placeholder="Escribe aquí por qué deseas apuntarte"></textarea><br><br>
+            
+                        <label for="Edad">¿Cuantos años tienes?</label>
+                        <select name="Edad">
+                            <optgroup label="Joven:">
+                                <option class="des" value="des" disabled>Menor de 18</option>
+                                <option value="act">Mayor de 18</option>
+                            </optgroup>
+                            <optgroup label="Senior">
+                                <option value="menor45">Menor de 45 años</option>
+                                <option value="45-60">Entre 45 y 60 años</option>
+                                <option value="mayor60"> Mayor de 60 años</option>
+                            </optgroup>
+                        </select>
+            
+                        <br><br>
+                        <label>Fecha de comienzo del curso:</label>
+                        <input name="fechserv" type="date"><br><br>
+            
+                        <label>Deseo recibir notificaciones por correo</label><input name="notificaciones" type="checkbox"><br><br>
+                        <div> 
+                            <input class="envio" type="submit">
+                            <input class="envio" type="reset"> 
+                        </div>
+            
+                    </form>
+            
+            </div>
+        </div>
+
+    
+
+        <footer>
+            <div>
+                <p>Siguenos en nuestras redes</p>
+                <a href="#"><img src="./imagenes/social_facebook_fb_35.png" alt="facebook"></a>
+                <a href="#"><img src="./imagenes/social_youtube_23.png" alt="youtube"></a>
+                <a href="#"><img src="./imagenes/sociallinkedin_member_30.png" alt="linkedin"></a>
+                <a href="#"><img src="./imagenes/social_instagram_3.png" alt="instagram"></a>
+
+                <br><br>
+                <hr>
+
+                <a href="#"><p>CONDICIONES DE VENTA</p></a>
+                <a href="#"><p>POLÍTICA DE PRIVACIDAD</p></a>
+                <a href="#"><p>CONDICIONES DE ENVÍO</p></a>
+                <a href="#"><p>ALÉRGENOS</p></a>
+                <a href="#"><p>AVISO LEGAL</p></a>
+
+                <hr>
+                <p> 2022 Amanda Vázquez Molina</p>
+            </div>
+        </footer>
+    </body>
+</html>
